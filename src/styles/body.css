@@ -1,0 +1,80 @@
+/* Overall Calculator Styles */
+.calculator {
+  width: 300px;
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Display Styles */
+.display {
+  grid-column: 1 / -1;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display .previous-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.display .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
+/* Keypad Styles */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 10px;
+}
+
+/* Button Styles */
+.button {
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+/* Special Buttons */
+.button.clear {
+  background-color: #e74c3c;
+}
+
+.button.clear:hover {
+  background-color: #c0392b;
+}
+
+.button.equals {
+  background-color: #2ecc71;
+}
+
+.button.equals:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .calculator {
+    width: 100%;
+  }
+}
